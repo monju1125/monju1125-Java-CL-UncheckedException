@@ -13,8 +13,8 @@ public class Lab {
      *
      * TODO: throw a RuntimeException.
      */
-    public void throwUncheckedException(){
-
+    public void throwUncheckedException() throws RuntimeException {
+        throw new RuntimeException();
     }
     /**
      * Unchecked exceptions will typically occur as a result of program errors that the program
@@ -36,8 +36,8 @@ public class Lab {
      *
      * TODO: cause a situation where a NumberFormatException is thrown.
      */
-    public void causeNumberFormatException(){
-
+    public void causeNumberFormatException() throws NumberFormatException{
+            throw new NumberFormatException();
     }
 
     /**
@@ -53,7 +53,8 @@ public class Lab {
      * TODO: cause an unchecked exception that isn't a plain RuntimeException or a
      * NumberFormatException.
      */
-    public void causeUncheckedException(){
-
+    public void causeUncheckedException() throws Exception{
+            throw new Exception();
+            
     }
 }
